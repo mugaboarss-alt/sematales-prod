@@ -1,0 +1,64 @@
+import { t as getProjectBySlug } from "./projects-DfwLZMj1.mjs";
+import { j as notFound, m as createFileRoute, p as lazyRouteComponent } from "../_libs/@tanstack/react-router+[...].mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/work._slug-OqE53K8C.js
+var $$splitNotFoundComponentImporter = () => import("./work._slug-CFPljohJ.mjs");
+var $$splitComponentImporter = () => import("./work._slug-Dc1NCMVL.mjs");
+var Route = createFileRoute("/work/$slug")({
+	loader: ({ params }) => {
+		const project = getProjectBySlug(params.slug);
+		if (!project) throw notFound();
+		return { project };
+	},
+	head: ({ loaderData }) => {
+		if (!loaderData) return { meta: [{ title: "Project not found — Sema Tales" }, {
+			name: "robots",
+			content: "noindex"
+		}] };
+		const { project } = loaderData;
+		const title = `${project.name} — Sema Tales`;
+		const description = project.description;
+		return { meta: [
+			{ title },
+			{
+				name: "description",
+				content: description
+			},
+			{
+				property: "og:title",
+				content: title
+			},
+			{
+				property: "og:description",
+				content: description
+			},
+			{
+				property: "og:type",
+				content: "article"
+			},
+			{
+				property: "og:image",
+				content: project.cover
+			},
+			{
+				name: "twitter:card",
+				content: "summary_large_image"
+			},
+			{
+				name: "twitter:title",
+				content: title
+			},
+			{
+				name: "twitter:description",
+				content: description
+			},
+			{
+				name: "twitter:image",
+				content: project.cover
+			}
+		] };
+	},
+	component: lazyRouteComponent($$splitComponentImporter, "component"),
+	notFoundComponent: lazyRouteComponent($$splitNotFoundComponentImporter, "notFoundComponent")
+});
+//#endregion
+export { Route as t };

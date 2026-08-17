@@ -10,9 +10,9 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as WorkSlugRouteImport } from './routes/work.$slug'
-import { Route as WorkImiziRouteImport } from './routes/work.imizi'
 import { Route as WorkRssbTigersRouteImport } from './routes/work.rssb-tigers'
+import { Route as WorkImiziRouteImport } from './routes/work.imizi'
+import { Route as WorkSlugRouteImport } from './routes/work.$slug'
 import { Route as ApiPublicInquiryRouteImport } from './routes/api/public/inquiry'
 
 const IndexRoute = IndexRouteImport.update({
@@ -20,9 +20,9 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const WorkSlugRoute = WorkSlugRouteImport.update({
-  id: '/work/$slug',
-  path: '/work/$slug',
+const WorkRssbTigersRoute = WorkRssbTigersRouteImport.update({
+  id: '/work/rssb-tigers',
+  path: '/work/rssb-tigers',
   getParentRoute: () => rootRouteImport,
 } as any)
 const WorkImiziRoute = WorkImiziRouteImport.update({
@@ -30,9 +30,9 @@ const WorkImiziRoute = WorkImiziRouteImport.update({
   path: '/work/imizi',
   getParentRoute: () => rootRouteImport,
 } as any)
-const WorkRssbTigersRoute = WorkRssbTigersRouteImport.update({
-  id: '/work/rssb-tigers',
-  path: '/work/rssb-tigers',
+const WorkSlugRoute = WorkSlugRouteImport.update({
+  id: '/work/$slug',
+  path: '/work/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiPublicInquiryRoute = ApiPublicInquiryRouteImport.update({
@@ -104,11 +104,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/work/$slug': {
-      id: '/work/$slug'
-      path: '/work/$slug'
-      fullPath: '/work/$slug'
-      preLoaderRoute: typeof WorkSlugRouteImport
+    '/work/rssb-tigers': {
+      id: '/work/rssb-tigers'
+      path: '/work/rssb-tigers'
+      fullPath: '/work/rssb-tigers'
+      preLoaderRoute: typeof WorkRssbTigersRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/work/imizi': {
@@ -118,11 +118,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WorkImiziRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/work/rssb-tigers': {
-      id: '/work/rssb-tigers'
-      path: '/work/rssb-tigers'
-      fullPath: '/work/rssb-tigers'
-      preLoaderRoute: typeof WorkRssbTigersRouteImport
+    '/work/$slug': {
+      id: '/work/$slug'
+      path: '/work/$slug'
+      fullPath: '/work/$slug'
+      preLoaderRoute: typeof WorkSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/public/inquiry': {

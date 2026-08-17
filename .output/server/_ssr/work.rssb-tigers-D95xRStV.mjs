@@ -1,0 +1,863 @@
+import { a as __toESM } from "../_runtime.mjs";
+import { a as motion, o as AnimatePresence, s as performance_default, t as useInView } from "../_libs/framer-motion.mjs";
+import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
+import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { t as SmoothScroll } from "./SmoothScroll-C3_qiIse.mjs";
+import { n as Nav, r as Reveal, t as Footer } from "./Footer-DgmZ7P9i.mjs";
+import { t as ContactForm } from "./ContactForm-CJ_3bzR1.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/work.rssb-tigers-D95xRStV.js
+var import_react = /* @__PURE__ */ __toESM(require_react());
+var import_jsx_runtime = require_jsx_runtime();
+var run_it_back_default = "/assets/run-it-back-DS7nkDme.mp4";
+var run_it_back_poster_default = "/assets/run-it-back-poster-BVFo16f_.jpg";
+var back_to_work_default = "/assets/back-to-work-BZ3BvspT.mp4";
+var back_to_work_poster_default = "/assets/back-to-work-poster-xY8r033R.jpg";
+var team_campaign_default = "/assets/team-campaign-C9X_oQVi.mp4";
+var team_campaign_poster_default = "/assets/team-campaign-poster-DSrVcvf7.jpg";
+var imyenda_teaser_default = "/assets/imyenda-teaser-Ch24TVah.mp4";
+var imyenda_teaser_poster_default = "/assets/imyenda-teaser-poster-hatykXPZ.jpg";
+var kit_flatlay_wide_default = "/assets/kit-flatlay-wide-Ci6Y9-4U.jpg";
+var kit_jersey_in_light_default = "/assets/kit-jersey-in-light-CrZnbgih.jpg";
+var street_portrait_13_default = "/assets/street-portrait-13-DAkw93Ky.jpg";
+var bench_duo_default = "/assets/bench-duo-0YpyrX8n.jpg";
+var mural_rafiki_duo_default = "/assets/mural-rafiki-duo-BuYoQvWx.jpg";
+var mural_rafiki_laughing_default = "/assets/mural-rafiki-laughing-RpoixpN5.jpg";
+var court_pair_standing_default = "/assets/court-pair-standing-Cx2Sd01c.jpg";
+var court_pair_portrait_default = "/assets/court-pair-portrait-CxjnTf33.jpg";
+var court_pair_motion_default = "/assets/court-pair-motion-jNjldQKI.jpg";
+var embrace_backs_23_default = "/assets/embrace-backs-23-CHNdVeEi.jpg";
+var seated_courtside_talk_default = "/assets/seated-courtside-talk-Cg9bg_hk.jpg";
+var fest_court_wide_default = "/assets/fest-court-wide-COonmVOf.jpg";
+var fest_girl_with_ball_default = "/assets/fest-girl-with-ball-BX7mTipl.jpg";
+var players_meet_kids_default = "/assets/players-meet-kids-C9X9uUMH.jpg";
+var fest_crowd_hands_default = "/assets/fest-crowd-hands-D4amopp9.jpg";
+var sideline_players_talking_default = "/assets/sideline-players-talking-DImfOI6Z.jpg";
+var bal_champions_default = "/assets/bal-champions-ck5JWuYE.jpg";
+var tiles = [
+	{
+		kind: "image",
+		src: kit_flatlay_wide_default,
+		alt: "RSSB Tigers kit laid out under dappled afternoon light",
+		ratio: 3 / 2
+	},
+	{
+		kind: "image",
+		src: street_portrait_13_default,
+		alt: "Supporter in the number 13 home jersey on a Kigali street court",
+		ratio: 2 / 3
+	},
+	{
+		kind: "image",
+		src: bench_duo_default,
+		alt: "Two supporters resting courtside in Tigers pinstripes and a branded hoodie",
+		ratio: 4 / 5
+	},
+	{
+		kind: "image",
+		src: mural_rafiki_duo_default,
+		alt: "Two supporters in Tigers jerseys against the Rafiki mural wall",
+		ratio: 5 / 4
+	},
+	{
+		kind: "video",
+		src: imyenda_teaser_default,
+		poster: imyenda_teaser_poster_default,
+		ratio: 16 / 9
+	},
+	{
+		kind: "image",
+		src: court_pair_standing_default,
+		alt: "Supporters in home and away jerseys on a public court at golden hour",
+		ratio: 5 / 4
+	},
+	{
+		kind: "image",
+		src: mural_rafiki_laughing_default,
+		alt: "Supporters laughing together in front of the Rafiki mural",
+		ratio: 5 / 4
+	},
+	{
+		kind: "image",
+		src: court_pair_portrait_default,
+		alt: "Two supporters facing camera on a public court in Kigali",
+		ratio: 5 / 4
+	},
+	{
+		kind: "image",
+		src: embrace_backs_23_default,
+		alt: "Two supporters seen from behind, arms around each other, number 23 on the jersey",
+		ratio: 4 / 5
+	},
+	{
+		kind: "image",
+		src: court_pair_motion_default,
+		alt: "Supporters on court, foreground movement blurring across the frame",
+		ratio: 5 / 4
+	},
+	{
+		kind: "image",
+		src: seated_courtside_talk_default,
+		alt: "Two supporters in conversation courtside after a game",
+		ratio: 5 / 4
+	},
+	{
+		kind: "image",
+		src: kit_jersey_in_light_default,
+		alt: "Tigers home jersey caught in a shaft of afternoon light",
+		ratio: 5 / 4
+	},
+	{
+		kind: "image",
+		src: fest_court_wide_default,
+		alt: "The squad lined up beneath the Community Fest banner",
+		ratio: 5 / 4
+	},
+	{
+		kind: "image",
+		src: fest_girl_with_ball_default,
+		alt: "A young supporter holding a basketball at the Community Fest barrier",
+		ratio: 3 / 2
+	},
+	{
+		kind: "image",
+		src: players_meet_kids_default,
+		alt: "Players greeting young players courtside at the Community Fest",
+		ratio: 5 / 4
+	},
+	{
+		kind: "image",
+		src: fest_crowd_hands_default,
+		alt: "Crowd reaching over the courtside barrier during the Community Fest",
+		ratio: 5 / 4
+	},
+	{
+		kind: "image",
+		src: sideline_players_talking_default,
+		alt: "Two players talking on the sideline during the Community Fest",
+		ratio: 5 / 4
+	}
+];
+var stats = [
+	{
+		label: "Views",
+		target: 1e6,
+		format: (v) => {
+			if (v >= 1e6) return "1M+";
+			if (v >= 1e3) return `${Math.round(v / 1e3)}K+`;
+			return `${Math.round(v)}+`;
+		},
+		headline: "People saw the story."
+	},
+	{
+		label: "Accounts reached",
+		target: 100,
+		format: (v) => `${Math.round(v)}K+`,
+		headline: "Introduced the brand to over 100,000 people."
+	},
+	{
+		label: "Non-followers",
+		target: 69.6,
+		format: (v) => `${v.toFixed(1)}%`,
+		headline: "Reached people beyond the existing audience."
+	},
+	{
+		label: "Interactions",
+		target: 73,
+		format: (v) => `${Math.round(v)}K+`,
+		headline: "Turned attention into engagement.",
+		description: "More than 73,000 likes, comments, shares and other interactions showed that people didn't just see the content, they actively responded to it."
+	},
+	{
+		label: "Profile visits",
+		target: 10,
+		format: (v) => `${Math.round(v)}K+`,
+		headline: "Thousands of people were interested enough to visit the team's profile, showing the campaign encouraged audiences to learn more."
+	},
+	{
+		label: "New followers",
+		target: 2.5,
+		format: (v) => `${v.toFixed(1)}K+`,
+		headline: "The campaign converted attention into long-term community growth."
+	}
+];
+function TigersCaseStudy() {
+	(0, import_react.useEffect)(() => {
+		const lenis = window.lenis;
+		if (lenis?.scrollTo) lenis.scrollTo(0, { immediate: true });
+		else window.scrollTo(0, 0);
+	}, []);
+	const [lightboxIndex, setLightboxIndex] = (0, import_react.useState)(null);
+	const openLightbox = (0, import_react.useCallback)((i) => setLightboxIndex(i), []);
+	const closeLightbox = (0, import_react.useCallback)(() => setLightboxIndex(null), []);
+	const nextTile = (0, import_react.useCallback)(() => setLightboxIndex((i) => i === null ? null : (i + 1) % tiles.length), []);
+	const prevTile = (0, import_react.useCallback)(() => setLightboxIndex((i) => i === null ? null : (i - 1 + tiles.length) % tiles.length), []);
+	(0, import_react.useEffect)(() => {
+		if (lightboxIndex === null) return;
+		const onKey = (e) => {
+			if (e.key === "Escape") closeLightbox();
+			if (e.key === "ArrowRight") nextTile();
+			if (e.key === "ArrowLeft") prevTile();
+		};
+		window.addEventListener("keydown", onKey);
+		document.body.style.overflow = "hidden";
+		return () => {
+			window.removeEventListener("keydown", onKey);
+			document.body.style.overflow = "";
+		};
+	}, [
+		lightboxIndex,
+		closeLightbox,
+		nextTile,
+		prevTile
+	]);
+	const galleryA = tiles.slice(0, 12);
+	const galleryB = tiles.slice(12);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "bg-[#F4F1EB] text-black min-h-screen",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SmoothScroll, {}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Nav, {}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", { children: [
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+					className: "px-6 md:px-12 pt-32 md:pt-40 pb-12 md:pb-16",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "mx-auto max-w-[1600px]",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+								to: "/",
+								hash: "work",
+								className: "text-xs uppercase tracking-[0.25em] text-black/60 hover:text-black transition-colors",
+								children: "← Back to work"
+							}) }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
+								className: "mt-10 md:mt-16 font-display text-6xl md:text-8xl lg:text-9xl leading-[0.9] tracking-[-0.04em]",
+								children: "Twaje"
+							}) }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("dl", {
+								className: "mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12 border-t border-black/10 pt-8",
+								children: [
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("dt", {
+										className: "text-xs uppercase tracking-[0.25em] text-black/40 mb-3",
+										children: "Client"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("dd", {
+										className: "text-base md:text-lg",
+										children: "RSSB Tigers"
+									})] }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("dt", {
+										className: "text-xs uppercase tracking-[0.25em] text-black/40 mb-3",
+										children: "Year"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("dd", {
+										className: "text-base md:text-lg",
+										children: "2026"
+									})] }),
+									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("dt", {
+										className: "text-xs uppercase tracking-[0.25em] text-black/40 mb-3",
+										children: "Campaign"
+									}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("dd", {
+										className: "text-base md:text-lg",
+										children: "Twaje"
+									})] })
+								]
+							}) })
+						]
+					})
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+					className: "px-6 md:px-12 pb-20 md:pb-28",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "mx-auto max-w-[1600px]",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeroReel, {
+							src: run_it_back_default,
+							poster: run_it_back_poster_default
+						}) })
+					})
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+					className: "px-6 md:px-12 pb-20 md:pb-28",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "mx-auto max-w-[1600px] grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 border-t border-black/10 pt-12 md:pt-16",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
+							className: "md:col-span-4",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "text-xs uppercase tracking-[0.25em] text-black/40 mb-4",
+								children: "The campaign"
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+								className: "font-display text-4xl md:text-5xl lg:text-6xl leading-[0.95] tracking-[-0.03em]",
+								children: "Twaje"
+							})] })
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
+							className: "md:col-span-7 md:col-start-6",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "text-lg md:text-2xl leading-relaxed md:leading-snug tracking-[-0.01em]",
+								children: "We created a social-first campaign for RSSB Tigers’ 2026 BAL campaign, designed to turn anticipation into action. Through strategic storytelling, timely content and community-led moments, the campaign built momentum around the BAL playoffs and finals, sparking conversation and turning supporters into active participants, as the Tigers went on to be crowned 2026 BAL Champions."
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "mt-10 md:mt-12 border-t border-black/10 pt-6",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "text-xs uppercase tracking-[0.25em] text-black/40 mb-4",
+									children: "Services"
+								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "text-base md:text-lg text-black/75",
+									children: "Campaign Strategy, Creative Direction, Content Production & Social Media Activation"
+								})]
+							})] })
+						})]
+					})
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+					className: "px-6 md:px-12 pb-20 md:pb-28",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "mx-auto max-w-[1600px]",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeroReel, {
+							src: back_to_work_default,
+							poster: back_to_work_poster_default
+						}) })
+					})
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MasonryGallery, {
+					label: "Gallery",
+					tiles: galleryA,
+					offset: 0,
+					onOpen: openLightbox
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+					className: "px-6 md:px-12 py-20 md:py-28",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "mx-auto max-w-[1600px] grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 border-t border-black/10 pt-12 md:pt-16",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
+							className: "md:col-span-4",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "text-xs uppercase tracking-[0.25em] text-black/40 mb-4",
+								children: "The Approach"
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+								className: "font-display text-4xl md:text-5xl leading-[0.95] tracking-[-0.03em]",
+								children: "RSSB Tigers"
+							})] })
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
+							className: "md:col-span-7 md:col-start-6",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "text-lg md:text-2xl leading-relaxed md:leading-snug tracking-[-0.01em]",
+								children: "We brought RSSB Tigers back into the conversation, bringing fans closer to the team through behind-the-scenes access, community engagement events and the introduction of team merchandise. The goal was simple, to make fans feel like part of the journey, not just spectators."
+							}) })
+						})]
+					})
+				}),
+				galleryB.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MasonryGallery, {
+					label: "More from the campaign",
+					tiles: galleryB,
+					offset: 12,
+					onOpen: openLightbox
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+					className: "px-6 md:px-12 pb-20 md:pb-28",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "mx-auto max-w-[1600px]",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeroReel, {
+							src: team_campaign_default,
+							poster: team_campaign_poster_default
+						}) })
+					})
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+					className: "px-6 md:px-12 pb-20 md:pb-28",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "mx-auto max-w-[1600px]",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+							src: bal_champions_default,
+							alt: "RSSB Tigers lift the BAL trophy under confetti",
+							className: "w-full h-auto",
+							loading: "lazy"
+						}) })
+					})
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ResultsSection, {}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+					className: "border-t border-black/10 px-6 md:px-12 py-32 md:py-48",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "mx-auto max-w-4xl text-center",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h2", {
+								className: "font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-[-0.04em]",
+								children: [
+									"Have something",
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+									"worth ",
+									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "italic font-normal",
+										children: "saying?"
+									})
+								]
+							}) }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
+								delay: .1,
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "mt-8 md:mt-10 text-lg md:text-xl text-black/70",
+									children: "Let's bring your message to life."
+								})
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
+								delay: .2,
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "mt-12 md:mt-16 flex justify-center",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+										onClick: () => window.dispatchEvent(new Event("open-inquiry")),
+										className: "group inline-flex items-center gap-4 border border-black rounded-full pl-6 pr-2 py-2 text-sm uppercase tracking-[0.25em] transition-colors hover:bg-black hover:text-white",
+										children: ["Start the conversation", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "inline-flex h-10 w-10 items-center justify-center rounded-full bg-black text-white transition-transform group-hover:translate-x-1 group-hover:bg-white group-hover:text-black",
+											children: "→"
+										})]
+									})
+								})
+							})
+						]
+					})
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+					className: "px-6 md:px-12 pb-24 md:pb-32",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "mx-auto max-w-[1600px] flex items-center justify-between text-xs uppercase tracking-[0.25em] text-black/50",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+							to: "/",
+							hash: "work",
+							className: "hover:text-black transition-colors",
+							children: "← Back to selected work"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+							to: "/",
+							className: "hover:text-black transition-colors",
+							children: "Home"
+						})]
+					})
+				})
+			] }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ContactForm, { modalOnly: true }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Footer, { tone: "dark" }),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AnimatePresence, { children: lightboxIndex !== null && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Lightbox, {
+				tile: tiles[lightboxIndex],
+				onClose: closeLightbox,
+				onNext: nextTile,
+				onPrev: prevTile
+			}) })
+		]
+	});
+}
+var SPANS = [
+	"md:col-span-7",
+	"md:col-span-5",
+	"md:col-span-4",
+	"md:col-span-8",
+	"md:col-span-6",
+	"md:col-span-6"
+];
+function MasonryGallery({ label, tiles: items, offset, onOpen }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+		className: "px-6 md:px-12 pb-20 md:pb-28",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "mx-auto max-w-[1600px]",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "text-xs uppercase tracking-[0.25em] text-black/40 mb-8 md:mb-12",
+				children: label
+			}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 items-start",
+				children: items.map((tile, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					className: `min-w-0 ${SPANS[i % SPANS.length]}`,
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MasonryTile, {
+						tile,
+						index: i,
+						onOpen: () => onOpen(offset + i)
+					})
+				}, i))
+			})]
+		})
+	});
+}
+function HeroReel({ src, poster }) {
+	const ref = (0, import_react.useRef)(null);
+	const [playing, setPlaying] = (0, import_react.useState)(true);
+	const [muted, setMuted] = (0, import_react.useState)(true);
+	(0, import_react.useEffect)(() => {
+		const el = ref.current;
+		if (!el) return;
+		const io = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) el.play().catch(() => {});
+				else el.pause();
+			});
+		}, { threshold: .3 });
+		io.observe(el);
+		return () => io.disconnect();
+	}, []);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "relative w-full overflow-hidden bg-black aspect-video",
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("video", {
+			ref,
+			poster,
+			muted,
+			loop: true,
+			playsInline: true,
+			preload: "metadata",
+			onPlay: () => setPlaying(true),
+			onPause: () => setPlaying(false),
+			className: "absolute inset-0 h-full w-full object-cover",
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("source", {
+				src,
+				type: "video/mp4"
+			})
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(VideoControls, {
+			playing,
+			muted,
+			onTogglePlay: () => {
+				const el = ref.current;
+				if (!el) return;
+				if (el.paused) el.play().catch(() => {});
+				else el.pause();
+			},
+			onToggleMute: () => setMuted((m) => !m)
+		})]
+	});
+}
+function MasonryTile({ tile, index, onOpen }) {
+	const ref = (0, import_react.useRef)(null);
+	const inView = useInView(ref, {
+		once: true,
+		margin: "0px 0px -15% 0px"
+	});
+	const delay = index % 6 * .05;
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
+		ref,
+		initial: {
+			opacity: 0,
+			y: 24
+		},
+		animate: inView ? {
+			opacity: 1,
+			y: 0
+		} : {},
+		transition: {
+			duration: .7,
+			delay,
+			ease: [
+				.22,
+				1,
+				.36,
+				1
+			]
+		},
+		className: "mb-4 md:mb-6 break-inside-avoid",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			role: "button",
+			tabIndex: 0,
+			onClick: onOpen,
+			onKeyDown: (e) => {
+				if (e.key === "Enter" || e.key === " ") {
+					e.preventDefault();
+					onOpen();
+				}
+			},
+			className: "group block w-full cursor-pointer overflow-hidden bg-black/[0.04] text-left",
+			children: tile.kind === "image" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+				src: tile.src,
+				alt: tile.alt,
+				loading: "lazy",
+				style: { aspectRatio: tile.ratio },
+				className: "w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03]"
+			}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(TileVideo, {
+				src: tile.src,
+				ratio: tile.ratio,
+				poster: tile.poster
+			})
+		})
+	});
+}
+function TileVideo({ src, ratio, poster }) {
+	const ref = (0, import_react.useRef)(null);
+	const [playing, setPlaying] = (0, import_react.useState)(false);
+	const [muted, setMuted] = (0, import_react.useState)(true);
+	(0, import_react.useEffect)(() => {
+		const el = ref.current;
+		if (!el) return;
+		const io = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) el.play().catch(() => {});
+				else el.pause();
+			});
+		}, { threshold: .4 });
+		io.observe(el);
+		return () => io.disconnect();
+	}, []);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: "relative w-full",
+		style: { aspectRatio: ratio },
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("video", {
+			ref,
+			poster,
+			muted,
+			loop: true,
+			playsInline: true,
+			preload: "metadata",
+			onPlay: () => setPlaying(true),
+			onPause: () => setPlaying(false),
+			className: "absolute inset-0 h-full w-full object-cover",
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("source", {
+				src,
+				type: "video/mp4"
+			})
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			onClick: (e) => e.stopPropagation(),
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(VideoControls, {
+				compact: true,
+				playing,
+				muted,
+				onTogglePlay: () => {
+					const el = ref.current;
+					if (!el) return;
+					if (el.paused) el.play().catch(() => {});
+					else el.pause();
+				},
+				onToggleMute: () => {
+					if (muted) document.querySelectorAll("video").forEach((v) => {
+						if (v !== ref.current) v.muted = true;
+					});
+					setMuted((m) => !m);
+				}
+			})
+		})]
+	});
+}
+function VideoControls({ playing, muted, onTogglePlay, onToggleMute, compact = false }) {
+	const size = compact ? "h-8 w-8" : "h-11 w-11";
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		className: `absolute ${compact ? "bottom-2 right-2 gap-1" : "bottom-4 right-4 gap-2"} flex z-10`,
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+			type: "button",
+			onClick: (e) => {
+				e.stopPropagation();
+				onTogglePlay();
+			},
+			"aria-label": playing ? "Pause" : "Play",
+			className: `${size} grid place-items-center rounded-full bg-black/60 backdrop-blur-sm border border-white/20 text-white hover:bg-black/80 transition-colors`,
+			children: playing ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
+				viewBox: "0 0 24 24",
+				className: compact ? "h-3 w-3" : "h-4 w-4",
+				fill: "currentColor",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("rect", {
+					x: "6",
+					y: "5",
+					width: "4",
+					height: "14"
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("rect", {
+					x: "14",
+					y: "5",
+					width: "4",
+					height: "14"
+				})]
+			}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
+				viewBox: "0 0 24 24",
+				className: compact ? "h-3 w-3" : "h-4 w-4",
+				fill: "currentColor",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M7 5l12 7-12 7V5z" })
+			})
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+			type: "button",
+			onClick: (e) => {
+				e.stopPropagation();
+				onToggleMute();
+			},
+			"aria-label": muted ? "Unmute" : "Mute",
+			className: `${size} grid place-items-center rounded-full bg-black/60 backdrop-blur-sm border border-white/20 text-white hover:bg-black/80 transition-colors`,
+			children: muted ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
+				viewBox: "0 0 24 24",
+				className: compact ? "h-3 w-3" : "h-4 w-4",
+				fill: "currentColor",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 00-1.32-3.18l-1.06 1.06a3 3 0 010 4.24l1.06 1.06A4.5 4.5 0 0016.5 12z" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M4 3l17 17-1.4 1.4L2.6 4.4 4 3z" })]
+			}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
+				viewBox: "0 0 24 24",
+				className: compact ? "h-3 w-3" : "h-4 w-4",
+				fill: "currentColor",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 00-2.5-4.03v8.06A4.5 4.5 0 0016.5 12zM14 3.23v2.06a7 7 0 010 13.42v2.06a9 9 0 000-17.54z" })
+			})
+		})]
+	});
+}
+function ResultsSection() {
+	const sectionRef = (0, import_react.useRef)(null);
+	const [isMobile, setIsMobile] = (0, import_react.useState)(false);
+	const [sectionTriggered, setSectionTriggered] = (0, import_react.useState)(false);
+	(0, import_react.useEffect)(() => {
+		const mq = window.matchMedia("(max-width: 767px)");
+		const update = () => setIsMobile(mq.matches);
+		update();
+		mq.addEventListener("change", update);
+		return () => mq.removeEventListener("change", update);
+	}, []);
+	(0, import_react.useEffect)(() => {
+		if (isMobile) {
+			setSectionTriggered(false);
+			return;
+		}
+		const el = sectionRef.current;
+		if (!el) return;
+		const io = new IntersectionObserver((entries) => {
+			for (const entry of entries) setSectionTriggered(entry.isIntersecting);
+		}, { threshold: .25 });
+		io.observe(el);
+		return () => io.disconnect();
+	}, [isMobile]);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+		ref: sectionRef,
+		className: "px-6 md:px-12 py-24 md:py-32 border-t border-black/10",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "mx-auto max-w-[1600px]",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "text-xs uppercase tracking-[0.25em] mb-10 md:mb-14",
+				children: "Results"
+			}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6",
+				children: stats.map((s) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(StatCard, {
+					stat: s,
+					isMobile,
+					sectionTriggered
+				}, s.label))
+			})]
+		})
+	});
+}
+function StatCard({ stat, isMobile, sectionTriggered }) {
+	const { label, target, format, headline, description } = stat;
+	const ref = (0, import_react.useRef)(null);
+	const [ownTriggered, setOwnTriggered] = (0, import_react.useState)(false);
+	const [displayText, setDisplayText] = (0, import_react.useState)(() => {
+		return typeof target === "number" && !Number.isNaN(target) ? format(0) : "0";
+	});
+	const [showText, setShowText] = (0, import_react.useState)(false);
+	(0, import_react.useEffect)(() => {
+		if (!isMobile) {
+			setOwnTriggered(false);
+			return;
+		}
+		const el = ref.current;
+		if (!el) return;
+		const io = new IntersectionObserver((entries) => {
+			for (const entry of entries) setOwnTriggered(entry.isIntersecting);
+		}, { threshold: .25 });
+		io.observe(el);
+		return () => io.disconnect();
+	}, [isMobile]);
+	const trigger = isMobile ? ownTriggered : sectionTriggered;
+	(0, import_react.useEffect)(() => {
+		if (!trigger) {
+			setDisplayText(typeof target === "number" && !Number.isNaN(target) ? format(0) : "0");
+			setShowText(false);
+			return;
+		}
+		let cancelled = false;
+		let raf = 0;
+		let textTimer = 0;
+		if (typeof target !== "number" || Number.isNaN(target)) {
+			setDisplayText(format(target || 0));
+			setShowText(true);
+			return () => {
+				cancelled = true;
+			};
+		}
+		const duration = 1800;
+		const start = performance_default.now();
+		const tick = (now) => {
+			if (cancelled) return;
+			const p = Math.min(1, (now - start) / duration);
+			const current = target * (1 - Math.pow(1 - p, 3));
+			setDisplayText(format(Number.isFinite(current) ? current : target));
+			if (p < 1) raf = requestAnimationFrame(tick);
+			else setDisplayText(format(target));
+		};
+		raf = requestAnimationFrame(tick);
+		textTimer = window.setTimeout(() => {
+			if (!cancelled) setShowText(true);
+		}, 250);
+		return () => {
+			cancelled = true;
+			if (raf) cancelAnimationFrame(raf);
+			if (textTimer) window.clearTimeout(textTimer);
+		};
+	}, [
+		trigger,
+		target,
+		format
+	]);
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+		ref,
+		className: "rounded-2xl border border-black/10 bg-black/[0.03] p-6 md:p-8",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "font-display text-4xl md:text-5xl lg:text-6xl leading-none tracking-[-0.03em] tabular-nums",
+				children: displayText
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "mt-4 text-xs uppercase tracking-[0.25em] text-black/50",
+				children: label
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: `mt-5 text-base md:text-lg leading-snug text-black transition-opacity duration-700 ${showText ? "opacity-100" : "opacity-0"}`,
+				children: headline
+			}),
+			description && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: `mt-3 text-sm md:text-base leading-relaxed text-black/60 transition-opacity duration-700 ${showText ? "opacity-100" : "opacity-0"}`,
+				children: description
+			})
+		]
+	});
+}
+function Lightbox({ tile, onClose, onNext, onPrev }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
+		initial: { opacity: 0 },
+		animate: { opacity: 1 },
+		exit: { opacity: 0 },
+		transition: { duration: .25 },
+		className: "fixed inset-0 z-50 bg-black/95 backdrop-blur-sm",
+		onClick: onClose,
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+				type: "button",
+				onClick: onClose,
+				"aria-label": "Close",
+				className: "absolute top-6 right-6 z-10 text-xs uppercase tracking-[0.25em] text-black/70 hover:text-black transition-colors",
+				children: "Close ✕"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+				type: "button",
+				onClick: (e) => {
+					e.stopPropagation();
+					onPrev();
+				},
+				"aria-label": "Previous",
+				className: "absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-10 h-12 w-12 grid place-items-center rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors",
+				children: "←"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+				type: "button",
+				onClick: (e) => {
+					e.stopPropagation();
+					onNext();
+				},
+				"aria-label": "Next",
+				className: "absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-10 h-12 w-12 grid place-items-center rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors",
+				children: "→"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "absolute inset-0 flex items-center justify-center p-8 md:p-16",
+				onClick: (e) => e.stopPropagation(),
+				children: tile.kind === "image" ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+					src: tile.src,
+					alt: tile.alt,
+					className: "max-h-full max-w-full object-contain"
+				}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("video", {
+					src: tile.src,
+					controls: true,
+					autoPlay: true,
+					playsInline: true,
+					className: "max-h-full max-w-full"
+				})
+			})
+		]
+	});
+}
+//#endregion
+export { TigersCaseStudy as component };
