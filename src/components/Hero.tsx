@@ -172,7 +172,7 @@ export function Hero() {
       >
         <video
           ref={videoRef}
-          muted
+          muted={muted}
           loop
           playsInline
           autoPlay
