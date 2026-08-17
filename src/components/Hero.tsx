@@ -65,12 +65,9 @@ export function Hero() {
   const [phase, setPhase] = useState<Phase>(reduceMotion ? "done" : "load");
   const [progress, setProgress] = useState(reduceMotion ? 100 : 0);
   const [muted, setMuted] = useState(true);
-    w: typeof window !== "undefined" ? window.innerWidth : 1280,
-  h: typeof window !== "undefined" ? window.innerHeight : 800,
-}));const [vp, setVp] = useState(() => ({
+  const [vp, setVp] = useState(() => ({
   w: typeof window !== "undefined" ? window.innerWidth : 1280,
-  h: typeof window !== "undefined" ? window.innerHeight : 800,
-}));
+  h: typeof window !== "undefined" ? window.innerHeight : 800,}));
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
