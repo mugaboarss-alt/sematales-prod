@@ -65,7 +65,12 @@ export function Hero() {
   const [phase, setPhase] = useState<Phase>(reduceMotion ? "done" : "load");
   const [progress, setProgress] = useState(reduceMotion ? 100 : 0);
   const [muted, setMuted] = useState(true);
-  const [vp, setVp] = useState({ w: 1280, h: 800 });
+    w: typeof window !== "undefined" ? window.innerWidth : 1280,
+  h: typeof window !== "undefined" ? window.innerHeight : 800,
+}));const [vp, setVp] = useState(() => ({
+  w: typeof window !== "undefined" ? window.innerWidth : 1280,
+  h: typeof window !== "undefined" ? window.innerHeight : 800,
+}));
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -117,20 +122,13 @@ export function Hero() {
     window.dispatchEvent(new Event("intro-done"));
   }, [phase]);
 
-  // video stays paused on its first frame through the preloader,
+  // video stays paused on its first frame through the ∑preloader,
   // starts exactly when it becomes fullscreen
   useEffect(() => {
     const v = videoRef.current;
     if (!v) return;
     if (phase === "done") {
       void v.play().catch(() => {});
-    } else {
-      v.pause();
-      try {
-        v.currentTime = 0;
-      } catch {
-        /* noop */
-      }
     }
   }, [phase]);
 
@@ -177,9 +175,10 @@ export function Hero() {
       >
         <video
           ref={videoRef}
-          muted={muted}
+          muted
           loop
           playsInline
+          autoPlay
           preload="auto"
           className="h-full w-full object-cover"
         >
